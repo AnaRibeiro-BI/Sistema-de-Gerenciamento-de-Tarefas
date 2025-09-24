@@ -1,8 +1,8 @@
 # Sistema de Gerenciamento de Tarefas
-# objetivo: Criar um programa que permita ao usuário gerenciar uma lista de tarefas.
+# objetivo: Criar um program que permita ao usuário gerenciar uma lista de tarefas.
 # Requisitos:
 # entrada de dados
-# lsitas e dicionários
+# listas e dicionários
 # condicionais
 # conjuntos
 # operadores lógicos e relacionados
