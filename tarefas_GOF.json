@@ -1,0 +1,42 @@
+[
+  {
+    "descricao": "Elaborar o manual de protocolos da DEIT",
+    "categoria": "Gestão Estratégica",
+    "concluida": false,
+    "data_criacao": "2025-09-25",
+    "prioridade": "alta",
+    "usuario": "Ana Luyza"
+  },
+  {
+    "descricao": "Organizar e listar a movimentação patrimonial da unidade de Ceres no periodo das minhas férias",
+    "categoria": "Patrimonio",
+    "concluida": false,
+    "data_criacao": "2025-09-25",
+    "prioridade": "baixa",
+    "usuario": "Ana Luyza"
+  },
+  {
+    "descricao": "Confeccionar o DOD dos produtos de beleza",
+    "categoria": "Licitação e compras",
+    "concluida": false,
+    "data_criacao": "2025-09-25",
+    "prioridade": "média",
+    "usuario": "Ana Luyza"
+  },
+  {
+    "descricao": "Organizar a planilha de economicidade",
+    "categoria": "Gestão Estratégica",
+    "concluida": false,
+    "data_criacao": "2025-09-25",
+    "prioridade": "alta",
+    "usuario": "Ana Luyza"
+  },
+  {
+    "descricao": "Estudar o contrato da DW",
+    "categoria": "Contratos",
+    "concluida": false,
+    "data_criacao": "2025-09-25",
+    "prioridade": "alta",
+    "usuario": "Ana Luyza"
+  }
+]
