@@ -15,8 +15,9 @@ ARQUIVO_TAREFAS = "tarefas_GOF.json" # Define o nome do arquivo onde as tarefas 
 # os.path.exists evita erro ao tentar abrir um arquivo inexistente.
 
 def carregar_tarefas():
-    if os.path.exists(ARQUIVO_TAREFAS): # evita erro ao tentar abrir um arquivo inexistente.
-        with open(ARQUIVO_TAREFAS, "r", encoding="utf-8") as f:
+    if os.path.exists(ARQUIVO_TAREFAS): # busca o arquivo json com as tarefas salvo em qq Sistema Operacional (OS) 
+        with open(ARQUIVO_TAREFAS, "r", encoding="utf-8") as f: #"r" significa "read" (ler). Estamos abrindo o arquivo apenas para ler seu conteúdo.
+            # utf-8 é um padrão de codificação de caracteres que permite que o Python leia e escreva caracteres especiais como ç, ã, é, etc., sem que eles virem símbolos estranhos.
             return json.load(f)
     return []
 
