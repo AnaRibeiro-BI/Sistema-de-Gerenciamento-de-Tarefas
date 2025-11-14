@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Lista de Tarefas</h2>
+<p>Tarefas concluídas: {{ concluidas }} | Pendentes: {{ pendentes }}</p>
+{% if tarefas %}
+<table>
+    <tr>
+        <th>#</th>
+        <th>Descrição</th>
+        <th>Categoria</th>
+        <th>Prioridade</th>
+        <th>Usuário</th>
+        <th>Status</th>
+        <th>Ações</th>
+    </tr>
+    {% for i in range(tarefas|length) %}
+    {% set tarefa = tarefas[i] %}
+    <tr>
+        <td>{{ i+1 }}</td>
+        <td>{{ tarefa['descricao'] }}</td>
+        <td>{{ tarefa['categoria'] }}</td>
+        <td>{{ tarefa['prioridade'] }}</td>
+        <td>{{ tarefa['usuario'] }}</td>
+        <td>{{ "✔" if tarefa['concluida'] else "✗" }}</td>
+        <td>
+            {% if not tarefa['concluida'] %}
+            <a url_for(Concluir</a>
+            {% endif %}
+            <a url_for(Editar</a>
+            <a url_for(Remover</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>Nenhuma tarefa cadastrada.</p>
+{% endif %}
+{% endblock %}

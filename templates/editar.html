@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Editar Tarefa</h2>
+<form method="POST">
+    <label>Descrição:</label>
+    <input type="text" name="descricao" value="{{ tarefa['descricao'] }}" required><br><br>
+    <label>Categoria:</label>
+    <input type="text" name="categoria" value="{{ tarefa['categoria'] }}" required><br><br>
+    <label>Prioridade:</label>
+    <select name="prioridade" required>
+        <option value="alta" {% if tarefa['prioridade'] == 'alta' %}selected{% endif %}>Alta</option>
+        <option value="média" {% if tarefa['prioridade'] == 'média' %}selected{% endif %}>Média</option>
+        <option value="baixa" {% if tarefa['prioridade'] == 'baixa' %}selected{% endif %}>Baixa</option>
+    </select><br><br>
+    <label>Usuário:</label>
+    <select name="usuario" required>
+        {% for u in ['Lioniso','Ana','Camila','Rossana','Angela','Renata'] %}
+        <option value="{{ u }}" {% if tarefa['usuario'] == u %}selected{% endif %}>{{ u }}</option>
+        {% endfor %}
+    </select><br><br>
+    <button type="submit">Salvar Alterações</button>
+</form>
+{% endblock %}
